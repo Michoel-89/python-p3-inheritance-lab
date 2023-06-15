@@ -18,4 +18,4 @@ class Teacher(User):
     "pytest -x flag to fail fast",
 ]
     def teach(self):
-        return self.knowledge[random.randint(0, 10)]
+        return self.knowledge[random.randint(0, len(self.knowledge))]
